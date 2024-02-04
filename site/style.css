@@ -1,0 +1,599 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2.titulo{
+    text-align: center;
+    font-size: 38px;
+}
+
+
+.flex{
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: rgb(255, 242, 0);    
+    cursor: pointer;
+    transition: .2s;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* FIM ESTILO GERAL */
+
+/* ESTILO CABEÇALHO */
+header{
+    padding: 10px 4%;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header nav a {
+    color: rgb(113, 113, 113);
+    text-decoration: none;
+    display: inline-block;
+}
+header nav.menu-desktop a:hover{
+    color: white;
+    transform: scale(1.09);
+    transition: .3s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 10px rgb(255, 242, 0);
+    transform: scale(1.05);
+
+}
+
+.interface .insta a{
+    color: rgb(255, 221, 0);
+    font-size: 30px;
+}
+
+
+/* FIM ESTILO CABEÇALHO */
+
+/* ESTILO TOPO SITE */
+
+section.topo-do-site .tipos{
+    padding: 40px 4%;
+    line-height: 28px;
+}
+
+section.topo-do-site .tipos h2{
+    text-align: left;
+    margin-bottom: 30px;
+}
+section.topo-do-site .txt-topo-site h2{
+    text-align: left;
+}
+
+section.topo-do-site .flex{
+    padding: 40px 4%;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 70px;
+}
+
+
+
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+}
+
+
+.topo-do-site .img-topo-site img{
+    width: 500px;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.topo-do-site .ctt-wpp button{
+    background-color: rgb(37 211 102);
+    color: white;
+    
+}
+
+.topo-do-site .ctt-wpp button i{
+    font-size: 20px;
+}
+
+.topo-do-site .ctt-wpp button:hover{
+    box-shadow: 0 0 10px 1px rgb(83, 81, 81);
+}
+
+.topo-do-site .ctt-wpp{
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.topo-do-site .ctt-wpp p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* FIM ESTILO TOPO DO SITE */
+
+/* ESTILO ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 40px 4%;
+    background-color: rgb(255, 221, 0);
+    color: black;
+}
+
+section.especialidades .flex{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.especialidades .flex .list{
+    display: none;
+}
+
+.especialidades .especialidades-box{
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.especialidades .especialidades-box:hover{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transform: scale(1.01);
+    transition: .2s;
+}
+
+.especialidades .especialidades-box i{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+.especialidades .especialidades-box p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.especialidades h2{
+    color: black;
+}
+/* FIM ESTILO ESPECIALIDADES*/
+
+/*  ESTILO SOBRE */
+
+section.sobre{
+    padding: 90px 4%;
+    background-color: black;
+
+}
+section.sobre .flex{
+    color: white;
+    
+}
+
+.sobre .interface{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 40px 8px rgba(255, 221, 0, 0.216);
+    border-radius: 30px;
+}
+
+section.sobre .interface .img-servicos img{
+    border-radius: 30px;
+    width: 600px;
+}
+section.sobre .interface .img-servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.sobre .flex{
+    padding: 40px 4%;
+}
+section.sobre .flex ul{
+    list-style: none;
+}
+section.sobre .flex ul li{
+    font-size: 18px;
+    line-height: 35px;
+}
+.sobre .txt-sobre h2{
+    font-size: 38px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*  FIM ESTILO SOBRE */
+
+
+/* ESTILO PORTIFOLIO */
+
+section.portfolio{
+    padding: 80px 4%;
+    background-image: url(images/loja1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+
+section.portfolio h2{
+    color: rgb(255, 255, 255);
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+section.portfolio .interface .flex .img-loja, .como-chegar{
+    text-align: center;
+    color: white;
+}
+
+section.portfolio .interface .flex .img-loja .como-chegar{
+    justify-content: center;
+}
+
+section.portfolio .interface .flex .img-loja img{
+    border-radius: 30px;
+}
+
+section.portfolio .interface .flex .img-loja h3{
+    margin-bottom: 20px;
+}
+
+section.portfolio .flex .como-chegar{
+    align-items: center;
+    gap: 5px;
+}
+
+section.portfolio .flex .como-chegar i{
+    font-size: 25px;
+    color: rgb(232, 61, 61);
+}
+
+section.portfolio .flex .como-chegar a{
+    text-decoration: none;
+}
+
+section.portfolio .flex .como-chegar a p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: white;
+}
+
+section.portfolio .flex .como-chegar a p:hover{
+    color: rgb(235, 47, 60);
+}
+
+section.portfolio .flex .endereco h3{
+    margin-bottom: 20px;
+
+}
+
+section.portfolio .interface .flex .img-loja .mapa{
+    margin-top: 30px;
+}
+section.portfolio .interface .flex .img-loja .mapa-mobile{
+    display: none;
+}
+
+
+
+
+/* FIM ESTILO PORTIFOLIO */
+
+/* FORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+    background-color: rgb(0, 0, 0);
+}
+
+.formulario .interface .flex h2{
+    color: rgb(255, 255, 255);
+}
+
+.formulario .interface .flex{
+    display: block;
+    
+}
+
+.formulario{
+    background-size: cover;
+}
+
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+
+.hi-slide .hi-prev, .hi-slide .hi-next{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(255, 221, 0);
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover, .hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+.hi-slide .hi-prev{
+    left: -60px;
+}
+
+.hi-slide .hi-prev::before{
+    content: "<";
+}
+
+.hi-slide .hi-next{
+    right: -60px;
+}
+
+.hi-slide .hi-next::before{
+    content: ">";
+}
+
+.hi-slide > ul{
+    list-style: none;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+
+}
+
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+
+/* fim formulario */
+
+/* rodape */
+
+footer{
+    padding: 50px 4%;
+    background-color: black;
+}
+
+footer .interface{
+    color: white;
+}
+
+.interface .um{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255, 221, 0 );
+
+}
+.interface .um img{
+    width: 90px;
+}
+
+footer .um, footer .dois{
+    padding: 20px 0;
+}
+
+footer .interface .um .contatos h3{
+    margin-bottom: 10px;
+}
+
+footer .interface .um .contatos a i{
+    color: rgb(255, 221, 0);
+}
+
+footer .interface .um .contatos a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .interface .um .contatos a:hover{
+    color: rgb(255, 221, 0 );
+}
+
+
+
+
+/* FIM RODAPE */
+
+
+@media screen and (max-width: 1020px){
+    /* classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+    h2.titulo{
+        font-size: 25px;
+    }
+    /* classes gerais */
+
+
+    /* cabeçalho */
+    .menu-desktop, .insta{
+        display: none;
+    }
+    header .interface{
+        justify-content: center;
+    }
+    /* cabeçalho */
+
+
+    /* topo site */
+    .topo-do-site .txt-topo-site h1{
+        font-size: 25px;
+        line-height: 10px;
+    }
+    section.topo-do-site .flex{
+        gap: 10px;
+    }
+    section.topo-do-site .flex img{
+        width: 100%;
+        margin-top: 20px;
+    }
+   
+    section.topo-do-site .flex .txt-topo-site .btn-contato a button, .txt-topo-site .btn-contato a button i{
+        font-size: 15px;
+    }
+    /* topo site */
+
+    
+    /* vantagens */
+    section.especialidades .interface .flex{
+        gap: 1px;
+    }
+    section.especialidades .flex .especialidades-box{
+        display: flex;
+        gap: 10px;
+        max-width: 100vh;
+    }
+    section.especialidades .flex .especialidades-box{
+        display: none;
+    }
+    section.especialidades .flex .list{
+        display: block;
+        margin-top: 50px;
+    }
+    section.especialidades .flex .list ul{
+        list-style-type: none;
+    }
+    section.especialidades .flex .list ul li{
+        display: flex;
+        gap: 10px;
+        line-height:50px;
+        font-size: 16px;
+    }
+    section.especialidades .flex .list ul li i{
+        font-size: 24px;
+    }
+    /* vantagens */
+
+
+    /* serviços */
+    section.sobre img{
+        display: none;
+    }
+    .sobre .txt-sobre h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    /* serviços */
+
+
+    /* onde estamos */
+    section.portfolio .interface .flex .mapa iframe{
+        width: 100%;
+        height: 300px;
+    }
+    /* onde estamos */
+
+
+    /* galeria */
+    #slider{
+        width: 90%;
+        margin-top: 30px;
+    }
+ 
+    .hi-slide .hi-prev{
+        left: -6px;
+    }
+    .hi-slide .hi-next{
+        right: -6px;
+    }
+    
+    /* galeria */
+
+
+    /* rodape */
+    footer > .interface .um {
+        font-size: 12px;
+    }
+    /* rodape */
+
+}
+
+    
+
+
+
